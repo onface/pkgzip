@@ -11,10 +11,7 @@ module.exports = {
     library: 'morty',
   },
   module: {
-    preLoaders: [
-      { test: /\.json$/, exclude: /node_modules/, loader: 'json' },
-    ],
-    loaders: [
+    rules: [
       {
         loader: 'babel-loader',
         test: /\.js$/,

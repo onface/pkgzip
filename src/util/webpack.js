@@ -36,7 +36,7 @@ export default function (opts) {
       libraryTarget: 'umd',
     },
     resolve: {
-      root: `${buildDir}/node_modules`,
+      modules: [`${buildDir}/node_modules`],
     },
     plugins: selectedPlugins,
   });
