@@ -15,8 +15,8 @@ cp yarn.lock morty/
 # install node_modules in morty dir
 cd morty
 npm i --production # not using --only=production because we are on npm 2.x
+# TODO try: yarn install --production
 ls node_modules
-npm install bengummer/yarn#lambda-fix --force --legacy-bundling # TODO: see if can remove
 npm install mkdirp glob-all filesize graceful-fs # needed on lambda for some reason. TODO: see if can remove
 cd ..
 
